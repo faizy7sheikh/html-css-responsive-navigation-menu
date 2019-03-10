@@ -1,0 +1,287 @@
+*{
+    margin: 0%; /*all elemnt margin set to 0*/
+    padding: 0%;   /*all elemnt padding set to 0*/
+    box-sizing: border-box;   /*all elemnt overflow set inside box*/
+    text-decoration: none;    /*all element having no underline*/
+}
+body{
+    width: 100%;             /*body with set to 100% */
+    overflow: scroll;        /*overflow set to scroll */
+}
+.containe{                   /*main heading of nav bar*/
+    background: black;     
+    color: white;
+    border-bottom: 2px solid coral;
+}
+.header{                      /*nav bar postion is fixed*/
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+.cls{
+    clear: both;
+}
+.containe h1{                  
+    position: absolute;
+    top: 10px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+h1 a{
+    color: coral;
+}
+.navbar{
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a{
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+}
+.navbar a:hover{
+    background: powderblue;
+}
+.contain{
+    text-align: justify;
+}
+#toggle{
+    display: none;
+}
+.textarea{
+    display: flex;
+    justify-content: flex-end;
+    background: black;
+}
+.textarea label{
+    width: 35px;
+    height: 35px;
+    background:#333;
+    color: black;
+    padding: 5px;
+    margin:6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textarea label span{
+    width: 60%;
+    height: 1px;
+    background: white;
+    margin: 2px;
+}
+.textarea{
+    display: none;
+}
+.slidecontainer{                     /*slide container to limit the overflow  more than 100%*/
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+
+}
+.slide{                                /*total no of slide to contain images ie 400%*/
+    width: 400%;
+    display: flex;
+    position: relative;
+    animation: image_slider;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slides{                        /*each slide with is 100%*/
+    width: 100%;
+    margin: 5px;
+    box-shadow: rgba(122, 57,103, 0.5);
+    position: relative; /*this relative for content*/
+    border-bottom:2px solid red;
+}
+.slides img{
+    width: 100%;
+    opacity: 0.6;
+    height: 400px;
+}
+.slide:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.content{
+    width: 45%;
+    position: absolute;
+    top: 60%;
+    left: 45px;
+    color: #f2f2f2;
+}
+.content h1{
+    width: 35%;
+    color: white;
+    background:red;
+    margin: 5px;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+}
+.content p{
+    padding: 8px 15px;
+    background: #333;
+    text-align: justify;
+}
+.contain{
+    margin: 30px 10px;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,serif;
+    font-weight: bold;
+    background: #333;
+    padding: 14px 18px;
+}
+.mainbody{
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+.maincontain{                                 /*div part of first */
+    background: rgba(107, 56, 56, 0.884);
+    padding: 22px 18px;
+    margin: 16px;
+}
+.maincontain h3{                     /*heading at the top of scroll ie SQL injection*/         
+    color: #f2f2f2;
+    background: #334;
+    line-height: 40px;
+    padding-left: 35px;
+    text-transform: capitalize;
+    min-height: 40px;
+}
+p{
+    margin: 20px 15px;
+} 
+ul li{
+    margin-left: 55px;
+    list-style-type: lower-alpha;
+    padding: 12px;
+}
+.box2{                              /*main box to display two box*/
+    width: 80%;
+    margin: auto;
+    background: red;
+}
+.box{                              /*shows two box in div*/  
+    width: 40%;
+    float: left;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    background:rgba(5, 19, 17, 0.829);
+    margin-left: 55px;
+
+}
+.footer{                                       /*footer of the html page*/
+    background: black;
+    color: #f2f2f2;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 12px;
+    padding: 25px;
+    word-spacing: .8em;
+    line-height: 25px;
+}
+.address{                               /*Address div to show information about author*/
+    color: #f2f2f2;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 12px;
+    padding: 25px;
+    background:rgba(5, 19, 17, 0.829);
+
+}
+.scrollcontent{         /*Main content of html*/
+    width: 100%;
+    background: rgba(107, 56, 56, 0.884);
+    margin: auto;
+    padding: 22px 18px;
+    margin: 16px;
+}
+form{                       /*user interface form to retrieve data*/
+   background: black;
+   color: #f2f2f2;
+   margin-top: 0%;
+}table{                     
+    margin-top: 0%;
+    padding-left: 40px;
+}
+table td{
+    padding: 12px;
+}
+#btn{                             /*submit button to send data to register.php file*/
+    margin-left: 30px;
+    padding: 6px;
+}
+@keyframes image_slider{         /*animation for four slides at different time*/
+    0%{
+        left: 0;
+    }
+    24%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    48%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    74%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    99%{
+        left: -300%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@media screen and (max-width: 700px){                 /*When screen size become less than 700px it show mobile nav*/
+    .navbar{
+        flex-direction: column;
+        display: none;
+    }
+    #toggle:checked+.navbar{
+        display: flex;
+
+    }
+    .navbar a:hover{
+        width: 100%;
+    }
+    .textarea{
+        display: flex;
+    }
+    .content p{
+        display: none;
+    }
+    .content{
+        top: 75%;
+        font-size: 12px;
+        width: 100%;
+    }
+}
